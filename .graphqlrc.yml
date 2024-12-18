@@ -1,0 +1,8 @@
+schema: https://relevance-sega-cartridges-rise.trycloudflare.com/graphql/
+documents: './lib/graphql/**/*.ts'
+extensions:
+  endpoints:
+    default:
+      url: https://relevance-sega-cartridges-rise.trycloudflare.com/graphql/
+      headers:
+        Authorization: Bearer ${GRAPHQL_AUTH_TOKEN}
